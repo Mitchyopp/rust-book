@@ -1,0 +1,75 @@
+I'm just going to add some personal notes for myself here.
+
+i doubt they will be useful to anyone but hey, i'll include them in the github just incase lol.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+# Compiling the project
+
+The rust programming language needs to be compiled before it can be run, this can be done with `rustc <name.rs>`
+
+So for example if i named a file `main.rs` then it would be `rustc main.rs`
+
+This then compiles the rust file.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+# Running the program
+
+This can be done simply be referencing the file, this is the same as if you were to run a shell script.
+
+again, if the file was called `main.rs` then after you compiled it above you just run `./main`.
+
+You don't need to include the .rs because it automatically knows, it just needs the name.
+
+After this the file will then run, woohoo!
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+# Macros
+
+Programs that run with an ! is something called a macro and it's not a function, i'll learn about this in chapter 20.
+
+For example, `println!("Hello!");` is a macro because it has the !, therefor is not a function.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+# The main function
+
+All rust code is run inside the main function if i understand correctly, or atleast the main function is the first bit of code ran. 
+
+```
+fn main() {
+
+}
+```
+
+that's an example of the main function.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+# Cargo
+
+Cargo is basically a tool that helps make rust easier, as far as im aware it lets you initialise projects and run them a lot easier.
+
+You can make a new project with cargo using this command: `cargo new <name>`. And then of course cd into it.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+# Cargo.toml
+
+This is a file that shows up inside a directory made with cargo, inside this file is the package name, version and edition of rust used.
+
+This also includes a dependencies segment, this is used to list packages or as rust calls them, `crates` which give unique properties.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+# cargo commands
+
+There's a few cargo commands that do different things.
+
+There's `cargo build` which compiles the file. if you do this then you will then need to reference the binary with something like ./target/debug/hello_cargo
+
+There's `cargo run` which basically does the line above but in 1 command so it's more useful and used more often.
+
+And then there's `cargo check` which compiles the project but dosen't produce an executable.

@@ -73,3 +73,5 @@ There's `cargo build` which compiles the file. if you do this then you will then
 There's `cargo run` which basically does the line above but in 1 command so it's more useful and used more often.
 
 And then there's `cargo check` which compiles the project but dosen't produce an executable.
+
+When a project is ready to be released you use the command `cargo build --release` which optomises the code making it faster but takes longer to compile.

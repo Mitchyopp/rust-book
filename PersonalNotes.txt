@@ -75,3 +75,10 @@ There's `cargo run` which basically does the line above but in 1 command so it's
 And then there's `cargo check` which compiles the project but dosen't produce an executable.
 
 When a project is ready to be released you use the command `cargo build --release` which optomises the code making it faster but takes longer to compile.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+I'm using NixOS which is a linux distrobution, but for me anyway if i add something into my ~/.local/bin folder (the binary from a rust project),
+- then i can use it system wide as if i installed it.
+
+

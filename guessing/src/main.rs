@@ -1,14 +1,18 @@
-use std::io;
+use std::io; // imports the io (input/output) library from std
 
-fn main() {
-    println!("Welcome to the guessing game!");
+fn main() { // start of the main function
+    println!("Welcome to the guessing game!"); // Basic print statement
     println!("Please put your guess!");
 
-    let mut guess = String::new();
+    let mut guess = String::new(); // Makes a variable that is mutable (it can be changed)
 
-    io::stdin()
-        .read_line(&mut guess)
-        .expect("Failed to read line");
+    io::stdin() // Accessing the input/output library
+        .read_line(&mut guess) // i'm assuming this is calling the guess variable we made earlier
+                               // and making sure that it's mutable.
+        .expect("Failed to read line"); // This looks like an error handling line, if something
+                                        // dosen't go as expected then catch the error basically
+                                        // and then print Failed to read line.
 
-    println!("You guessed: {}!", guess);
+    println!("You guessed: {}", guess); // Print the result
 }
+
